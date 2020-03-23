@@ -11,7 +11,7 @@ import java.util.Random;
 public class BrittleResource {
 
     @Retryable(include = RetryableException.class)
-    public String getBrittleResource() throws RetryableException{
+    public String getBrittleResource() throws RetryableException {
         int result = new Random().nextInt() % 2;
         if(result == 0){
             System.out.println("Failed to retrieve data!");

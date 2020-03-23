@@ -1,6 +1,5 @@
 package com.cmorterud.examples.spring.retryTemplateExample;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -30,7 +29,4 @@ class RetryTemplateExampleApplicationTests {
 		this.mockMvc.perform(get("/resource/getBrittleResource")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string("Brittle resource"));
 	}
-
-
-
 }
