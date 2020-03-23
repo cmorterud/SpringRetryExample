@@ -1,6 +1,7 @@
 package com.cmorterud.examples.spring.retryTemplateExample.resource;
 
 import com.cmorterud.examples.spring.retryTemplateExample.exception.RetryableException;
+import org.springframework.retry.annotation.Recover;
 import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
